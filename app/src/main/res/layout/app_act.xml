@@ -9,16 +9,9 @@
   android:padding="16dp">
 
   <Button
-    android:id="@+id/collapsing"
+    android:id="@+id/center_with_divider"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:text="Collapsing"
-    tools:ignore="HardcodedText" />
-
-  <Button
-    android:id="@+id/collapsing2"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Collapsing2"
+    android:text="Center With Divider"
     tools:ignore="HardcodedText" />
 </LinearLayout>

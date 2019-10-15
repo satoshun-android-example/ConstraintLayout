@@ -6,7 +6,7 @@ import androidx.databinding.DataBindingUtil
 import com.github.satoshun.example.R
 import com.github.satoshun.example.databinding.MainActBinding
 
-class MainActivity : AppCompatActivity() {
+class CenterWithDividerActivity : AppCompatActivity() {
 
   private lateinit var binding: MainActBinding
 
