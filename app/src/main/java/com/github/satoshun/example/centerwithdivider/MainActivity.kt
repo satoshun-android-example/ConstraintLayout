@@ -1,8 +1,9 @@
-package com.github.satoshun.example
+package com.github.satoshun.example.centerwithdivider
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
+import com.github.satoshun.example.R
 import com.github.satoshun.example.databinding.MainActBinding
 
 class MainActivity : AppCompatActivity() {
