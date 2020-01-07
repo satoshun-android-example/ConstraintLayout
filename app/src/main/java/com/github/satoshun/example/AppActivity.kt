@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.github.satoshun.example.centerwithdivider.CenterWithDividerActivity
 import com.github.satoshun.example.databinding.AppActBinding
+import com.github.satoshun.example.gonewidth.GoneWidthActivity
 
 class AppActivity : AppCompatActivity() {
   private lateinit var binding: AppActBinding
@@ -18,6 +19,12 @@ class AppActivity : AppCompatActivity() {
     binding.centerWithDivider.setOnClickListener {
       startActivity(
         Intent(this@AppActivity, CenterWithDividerActivity::class.java)
+      )
+    }
+
+    binding.goneWidth.setOnClickListener {
+      startActivity(
+        Intent(this@AppActivity, GoneWidthActivity::class.java)
       )
     }
   }

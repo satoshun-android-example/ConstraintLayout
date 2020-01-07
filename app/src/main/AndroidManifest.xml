@@ -25,5 +25,9 @@
     <activity
       android:name=".centerwithdivider.CenterWithDividerActivity"
       android:theme="@style/AppTheme.NoActionBar" />
+
+    <activity
+      android:name=".gonewidth.GoneWidthActivity"
+      android:theme="@style/AppTheme.NoActionBar" />
   </application>
 </manifest>
