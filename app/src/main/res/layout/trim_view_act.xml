@@ -35,6 +35,7 @@
       app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
       <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -148,6 +149,49 @@
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toEndOf="@id/center3"
           app:layout_constraintTop_toTopOf="@id/left3" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+          android:id="@+id/left4"
+          android:layout_width="180dp"
+          android:layout_height="wrap_content"
+          android:text="LEFT"
+          app:layout_constraintEnd_toStartOf="@id/center4"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintHorizontal_chainStyle="packed"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+          android:id="@+id/center4"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="CENTER"
+          app:layout_constraintBottom_toBottomOf="@id/left4"
+          app:layout_constraintEnd_toStartOf="@id/right4"
+          app:layout_constraintStart_toEndOf="@id/left4"
+          app:layout_constraintTop_toTopOf="@id/left4" />
+
+        <Button
+          android:id="@+id/right4"
+          android:layout_width="180dp"
+          android:layout_height="wrap_content"
+          android:text="RIGHT"
+          app:layout_constraintBottom_toBottomOf="@id/left4"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/center4"
+          app:layout_constraintTop_toTopOf="@id/left4" />
+
+        <com.github.satoshun.example.trimview.HideHelper
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:constraint_referenced_ids="center4,left4,right4"
+          tools:ignore="MissingConstraints" />
       </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
   </androidx.coordinatorlayout.widget.CoordinatorLayout>
