@@ -43,7 +43,7 @@
           android:layout_width="180dp"
           android:layout_height="wrap_content"
           android:text="LEFT"
-          app:layout_constraintStart_toEndOf="@id/center"
+          app:layout_constraintEnd_toStartOf="@id/center"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toTopOf="parent" />
 
@@ -70,17 +70,22 @@
 
       <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="40dp"
         android:layout_marginTop="16dp">
 
         <androidx.constraintlayout.helper.widget.Flow
           android:id="@+id/flow"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:orientation="vertical"
-          app:constraint_referenced_ids="left2,center2,right2"
-          app:flow_maxElementsWrap="1"
-          app:flow_wrapMode="aligned"
+          android:layout_width="0dp"
+          android:layout_height="0dp"
+          app:constraint_referenced_ids="left2,right2,center2"
+          app:flow_horizontalBias="0"
+          app:flow_horizontalGap="4dp"
+          app:flow_horizontalStyle="packed"
+          app:flow_maxElementsWrap="2"
+          app:flow_verticalBias="0"
+          app:flow_verticalStyle="packed"
+          app:flow_wrapMode="chain"
+          app:layout_constraintBottom_toBottomOf="parent"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toTopOf="parent" />
@@ -89,19 +94,22 @@
           android:id="@+id/left2"
           android:layout_width="180dp"
           android:layout_height="wrap_content"
-          android:text="LEFT" />
+          android:text="LEFT"
+          tools:ignore="MissingConstraints" />
 
         <Button
           android:id="@+id/center2"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:text="CENTER" />
+          android:text="CENTER"
+          tools:ignore="MissingConstraints" />
 
         <Button
           android:id="@+id/right2"
           android:layout_width="180dp"
           android:layout_height="wrap_content"
-          android:text="RIGHT" />
+          android:text="RIGHT"
+          tools:ignore="MissingConstraints" />
       </androidx.constraintlayout.widget.ConstraintLayout>
 
       <androidx.constraintlayout.widget.ConstraintLayout
@@ -114,7 +122,9 @@
           android:layout_width="180dp"
           android:layout_height="wrap_content"
           android:text="LEFT"
-          app:layout_constraintStart_toEndOf="@id/center3"
+          app:layout_constraintEnd_toStartOf="@id/center3"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintHorizontal_chainStyle="packed"
           app:layout_constraintStart_toStartOf="parent"
           app:layout_constraintTop_toTopOf="parent" />
 
@@ -123,6 +133,7 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:text="CENTER"
+          app:layout_constrainedWidth="true"
           app:layout_constraintBottom_toBottomOf="@id/left3"
           app:layout_constraintEnd_toStartOf="@id/right3"
           app:layout_constraintStart_toEndOf="@id/left3"
@@ -133,10 +144,10 @@
           android:layout_width="180dp"
           android:layout_height="wrap_content"
           android:text="RIGHT"
-          app:layout_constraintBottom_toBottomOf="@id/center3"
+          app:layout_constraintBottom_toBottomOf="@id/left3"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toEndOf="@id/center3"
-          app:layout_constraintTop_toTopOf="@id/center3" />
+          app:layout_constraintTop_toTopOf="@id/left3" />
       </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
   </androidx.coordinatorlayout.widget.CoordinatorLayout>
