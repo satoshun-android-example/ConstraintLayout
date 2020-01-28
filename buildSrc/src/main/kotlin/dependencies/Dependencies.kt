@@ -1,18 +1,18 @@
 package dependencies
 
-const val COMPILE_SDK = 28
+const val COMPILE_SDK = 29
 const val MIN_SDK = 21
-const val TARGET_SDK = 28
+const val TARGET_SDK = 29
 
-private const val VKOTLIN = "1.3.50"
+private const val VKOTLIN = "1.3.61"
 private const val VNAVIGATION = "1.0.0"
 
-const val ANDROID_PLUGIN = "com.android.tools.build:gradle:3.5.1"
+const val ANDROID_PLUGIN = "com.android.tools.build:gradle:3.5.3"
 const val KOTLIN_PLUGIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:$VKOTLIN"
 const val SAFEARGS_PLUGIN = "android.arch.navigation:navigation-safe-args-gradle-plugin:$VNAVIGATION"
 const val VERSIONS_PLUGIN = "com.github.ben-manes:gradle-versions-plugin:0.20.0"
 
-private const val VCOUROUTINE = "1.3.2"
+private const val VCOUROUTINE = "1.3.3"
 const val KOTLIN = "org.jetbrains.kotlin:kotlin-stdlib:$VKOTLIN"
 const val COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$VCOUROUTINE"
 const val UI_COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$VCOUROUTINE"
@@ -32,7 +32,7 @@ const val CONTENTPAGER = "androidx.contentpager:contentpager:1.0.0-rc01"
 const val WEBKIT = "androidx.webkit:webkit:1.0.0"
 const val MEDIA2 = "androidx.media2:media2:1.0.0-alpha04"
 
-const val MATERIAL = "com.google.android.material:material:1.1.0-beta01"
+const val MATERIAL = "com.google.android.material:material:1.1.0-rc02"
 const val PAGING = "androidx.paging:paging-runtime:2.1.0"
 const val BROWSER = "androidx.browser:browser:1.0.0"
 const val NAVIGATION = "android.arch.navigation:navigation-fragment-ktx:$VNAVIGATION"
@@ -79,7 +79,7 @@ const val WORK_MANAGER = "androidx.work:work-runtime-ktx:2.0.0-rc01"
 
 const val ANDROID_ANNOTATION = "androidx.annotation:annotation:1.0.0"
 
-private const val VDAGGER = "2.22.1"
+private const val VDAGGER = "2.25.4"
 const val DAGGER_RUNTIME = "com.google.dagger:dagger:$VDAGGER"
 const val DAGGER_COMPILER = "com.google.dagger:dagger-compiler:$VDAGGER"
 const val DAGGER_ANDROID_RUNTIME = "com.google.dagger:dagger-android:$VDAGGER"
