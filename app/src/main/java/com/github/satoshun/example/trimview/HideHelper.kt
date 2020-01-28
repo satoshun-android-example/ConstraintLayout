@@ -9,7 +9,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isGone
 import androidx.core.view.updateLayoutParams
 
-
 class HideHelper @JvmOverloads constructor(
   context: Context,
   attrs: AttributeSet? = null,
