@@ -2,6 +2,7 @@ package com.github.satoshun.example.trimview
 
 import android.content.Context
 import android.util.AttributeSet
+import android.widget.TextView
 import androidx.constraintlayout.widget.ConstraintHelper
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isGone
@@ -9,7 +10,7 @@ import androidx.core.view.marginLeft
 import androidx.core.view.marginRight
 import androidx.core.view.updateLayoutParams
 
-class GoneOverflow @JvmOverloads constructor(
+class TextHideHelper @JvmOverloads constructor(
   context: Context,
   attrs: AttributeSet? = null,
   defStyleAttr: Int = 0
@@ -22,12 +23,13 @@ class GoneOverflow @JvmOverloads constructor(
 
     val target = views.first()
     if (target.isGone) return
+    if (target !is TextView) return
+    if (target.text == null) return
 
     val totalWidth = views.map { it.marginLeft + it.measuredWidth + it.marginRight }.sum()
 
     if (container.measuredWidth < totalWidth) {
-      target.updateLayoutParams { width = 0 }
-      target.isGone = true
+      target.text = null
     }
   }
 }

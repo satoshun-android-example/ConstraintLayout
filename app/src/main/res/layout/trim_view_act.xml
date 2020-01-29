@@ -194,6 +194,50 @@
           app:constraint_referenced_ids="center4,left4,right4"
           tools:ignore="MissingConstraints" />
       </androidx.constraintlayout.widget.ConstraintLayout>
+
+      <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp">
+
+        <Button
+          android:id="@+id/left5"
+          android:layout_width="80dp"
+          android:layout_height="wrap_content"
+          android:text="LEFT"
+          app:layout_constraintEnd_toStartOf="@id/center5"
+          app:layout_constraintHorizontal_bias="0"
+          app:layout_constraintHorizontal_chainStyle="packed"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+          android:id="@+id/center5"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginStart="100dp"
+          android:text="CENTER"
+          app:layout_constraintBottom_toBottomOf="@id/left5"
+          app:layout_constraintEnd_toStartOf="@id/right5"
+          app:layout_constraintStart_toEndOf="@id/left5"
+          app:layout_constraintTop_toTopOf="@id/left5" />
+
+        <Button
+          android:id="@+id/right5"
+          android:layout_width="180dp"
+          android:layout_height="wrap_content"
+          android:text="RIGHT"
+          app:layout_constraintBottom_toBottomOf="@id/left5"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toEndOf="@id/center5"
+          app:layout_constraintTop_toTopOf="@id/left5" />
+
+        <com.github.satoshun.example.trimview.TextHideHelper
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:constraint_referenced_ids="center5,right5,left5"
+          tools:ignore="MissingConstraints" />
+      </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
   </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>
