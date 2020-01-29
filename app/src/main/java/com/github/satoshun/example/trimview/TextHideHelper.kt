@@ -24,11 +24,12 @@ class TextHideHelper @JvmOverloads constructor(
     val target = views.first()
     if (target.isGone) return
     if (target !is TextView) return
-    if (target.text == null) return
+    if (target.text.isNullOrEmpty()) return
 
     val totalWidth = views.map { it.marginLeft + it.measuredWidth + it.marginRight }.sum()
+    val containerWidth = container.measuredWidth - container.paddingLeft - container.paddingRight
 
-    if (container.measuredWidth < totalWidth) {
+    if (containerWidth < totalWidth) {
       target.text = null
       target.updateLayoutParams { width = 50 }
     }
