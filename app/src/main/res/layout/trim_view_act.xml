@@ -158,7 +158,7 @@
 
         <Button
           android:id="@+id/left4"
-          android:layout_width="180dp"
+          android:layout_width="80dp"
           android:layout_height="wrap_content"
           android:text="LEFT"
           app:layout_constraintEnd_toStartOf="@id/center4"
@@ -171,6 +171,7 @@
           android:id="@+id/center4"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
+          android:layout_marginStart="100dp"
           android:text="CENTER"
           app:layout_constraintBottom_toBottomOf="@id/left4"
           app:layout_constraintEnd_toStartOf="@id/right4"
@@ -187,7 +188,7 @@
           app:layout_constraintStart_toEndOf="@id/center4"
           app:layout_constraintTop_toTopOf="@id/left4" />
 
-        <com.github.satoshun.example.trimview.HideHelper
+        <com.github.satoshun.example.trimview.GoneOverflow
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           app:constraint_referenced_ids="center4,left4,right4"
