@@ -20,7 +20,7 @@ class GoneOverflow @JvmOverloads constructor(
     if (container.measuredWidth == 0) return
     if (views.size <= 1) return
 
-    val target = views.getOrNull(0) ?: return
+    val target = views.first()
     if (target.isGone) return
 
     val totalWidth = views.map { it.marginLeft + it.measuredWidth + it.marginRight }.sum()
