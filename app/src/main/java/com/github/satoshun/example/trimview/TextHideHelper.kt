@@ -30,6 +30,7 @@ class TextHideHelper @JvmOverloads constructor(
 
     if (container.measuredWidth < totalWidth) {
       target.text = null
+      target.updateLayoutParams { width = 50 }
     }
   }
 }
