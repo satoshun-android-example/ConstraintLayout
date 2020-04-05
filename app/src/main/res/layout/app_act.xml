@@ -1,34 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android"
-  xmlns:tools="http://schemas.android.com/tools">
-
-  <LinearLayout
-    android:id="@+id/coordinator"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    android:orientation="vertical"
-    android:padding="16dp">
-
-    <Button
-      android:id="@+id/center_with_divider"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Center With Divider"
-      tools:ignore="HardcodedText" />
-
-    <Button
-      android:id="@+id/gone_width"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Gone Width"
-      tools:ignore="HardcodedText" />
-
-    <Button
-      android:id="@+id/trim"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Trim View"
-      tools:ignore="HardcodedText" />
-  </LinearLayout>
-</layout>
+<androidx.fragment.app.FragmentContainerView xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:id="@+id/nav_host_fragment"
+  android:name="androidx.navigation.fragment.NavHostFragment"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  app:defaultNavHost="true"
+  app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+  app:navGraph="@navigation/nav_graph" />

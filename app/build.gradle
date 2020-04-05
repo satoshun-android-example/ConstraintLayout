@@ -3,6 +3,7 @@ import static dependencies.DependenciesKt.*
 apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
+apply plugin: "androidx.navigation.safeargs.kotlin"
 
 android {
   compileSdkVersion COMPILE_SDK
@@ -25,6 +26,10 @@ android {
   dataBinding {
     enabled = true
   }
+
+  viewBinding {
+    enabled = true
+  }
 }
 
 dependencies {
@@ -34,6 +39,9 @@ dependencies {
   implementation APPCOMPAT
   implementation CONSTRAINTLAYOUT
   implementation KTX
+
+  implementation ACTIVITYX
+  implementation FRAGMENTX
 
   implementation LIFECYCLE_RUNTIME
 
@@ -51,6 +59,10 @@ dependencies {
 
   implementation GROUPIE
   implementation GROUPIE_DATABINDING
+
+  implementation NAVIGATION
+  implementation NAVIGATION_FRAGMENT
+  implementation NAVIGATION_UI
 
   testImplementation JUNIT
 

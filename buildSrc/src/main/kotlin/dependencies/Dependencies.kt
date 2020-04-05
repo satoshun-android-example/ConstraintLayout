@@ -5,11 +5,12 @@ const val MIN_SDK = 21
 const val TARGET_SDK = 29
 
 private const val VKOTLIN = "1.3.71"
-private const val VNAVIGATION = "1.0.0"
+private const val VNAVIGATION = "2.2.0"
 
 const val ANDROID_PLUGIN = "com.android.tools.build:gradle:3.6.2"
 const val KOTLIN_PLUGIN = "org.jetbrains.kotlin:kotlin-gradle-plugin:$VKOTLIN"
-const val SAFEARGS_PLUGIN = "android.arch.navigation:navigation-safe-args-gradle-plugin:$VNAVIGATION"
+const val SAFEARGS_PLUGIN =
+  "androidx.navigation:navigation-safe-args-gradle-plugin:$VNAVIGATION"
 const val VERSIONS_PLUGIN = "com.github.ben-manes:gradle-versions-plugin:0.20.0"
 
 private const val VCOUROUTINE = "1.3.4"
@@ -18,8 +19,8 @@ const val COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-core:$VCOUROUTIN
 const val UI_COROUTINE = "org.jetbrains.kotlinx:kotlinx-coroutines-android:$VCOUROUTINE"
 
 const val KTX = "androidx.core:core-ktx:1.1.0"
-const val ACTIVITYX = "androidx.activity:activity-ktx:1.0.0"
-const val FRAGMENTX = "androidx.fragment:fragment-ktx:1.1.0"
+const val ACTIVITYX = "androidx.activity:activity-ktx:1.1.0"
+const val FRAGMENTX = "androidx.fragment:fragment-ktx:1.2.0"
 
 const val LIFECYCLE_RUNTIME = "androidx.lifecycle:lifecycle-runtime-ktx:2.2.0-alpha04"
 
@@ -35,8 +36,10 @@ const val MEDIA2 = "androidx.media2:media2:1.0.0-alpha04"
 const val MATERIAL = "com.google.android.material:material:1.1.0-rc02"
 const val PAGING = "androidx.paging:paging-runtime:2.1.0"
 const val BROWSER = "androidx.browser:browser:1.0.0"
-const val NAVIGATION = "android.arch.navigation:navigation-fragment-ktx:$VNAVIGATION"
-const val NAVIGATION_UI = "android.arch.navigation:navigation-ui-ktx:$VNAVIGATION"
+
+const val NAVIGATION = "androidx.navigation:navigation-common-ktx:$VNAVIGATION"
+const val NAVIGATION_FRAGMENT = "androidx.navigation:navigation-fragment-ktx:$VNAVIGATION"
+const val NAVIGATION_UI = "androidx.navigation:navigation-ui-ktx:$VNAVIGATION"
 
 private const val VROOM = "2.1.0-alpha04"
 const val ROOM_COMMON = "androidx.room:room-common:$VROOM"
