@@ -28,10 +28,10 @@ class DivideIntoFourImageAdapter : ListAdapter<CellData, DivideIntoFourViewHolde
   override fun onBindViewHolder(holder: DivideIntoFourViewHolder, position: Int) {
     val data = getItem(position)
     with(holder.binding) {
-      leftTop.load(data.image1)
-      rightTop.load(data.image2)
-      leftBottom.load(data.image3)
-      rightBottom.load(data.image4)
+      topLeft.load(data.image1)
+      topRight.load(data.image2)
+      bottomLeft.load(data.image3)
+      bottomRight.load(data.image4)
 
       name.text = data.name
       userId.text = data.id

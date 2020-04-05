@@ -6,7 +6,7 @@
   android:layout_height="84dp">
 
   <com.google.android.material.imageview.ShapeableImageView
-    android:id="@+id/left_top"
+    android:id="@+id/top_left"
     android:layout_width="30dp"
     android:layout_height="30dp"
     android:layout_marginStart="16dp"
@@ -19,49 +19,62 @@
     tools:src="@tools:sample/avatars" />
 
   <com.google.android.material.imageview.ShapeableImageView
-    android:id="@+id/right_top"
+    android:id="@+id/top_right"
     android:layout_width="30dp"
     android:layout_height="30dp"
     android:adjustViewBounds="true"
     android:scaleType="centerCrop"
-    app:layout_constraintStart_toEndOf="@id/left_top"
-    app:layout_constraintTop_toTopOf="@id/left_top"
+    app:layout_constraintStart_toEndOf="@id/top_left"
+    app:layout_constraintTop_toTopOf="@id/top_left"
     app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.TopRight"
     tools:src="@tools:sample/avatars" />
 
   <com.google.android.material.imageview.ShapeableImageView
-    android:id="@+id/left_bottom"
+    android:id="@+id/bottom_left"
     android:layout_width="30dp"
     android:layout_height="30dp"
     android:adjustViewBounds="true"
     android:scaleType="centerCrop"
-    app:layout_constraintStart_toStartOf="@id/left_top"
-    app:layout_constraintTop_toBottomOf="@id/left_top"
+    app:layout_constraintStart_toStartOf="@id/top_left"
+    app:layout_constraintTop_toBottomOf="@id/top_left"
     app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.BottomLeft"
     tools:src="@tools:sample/avatars" />
 
   <com.google.android.material.imageview.ShapeableImageView
-    android:id="@+id/right_bottom"
+    android:id="@+id/bottom_right"
     android:layout_width="30dp"
     android:layout_height="30dp"
     android:adjustViewBounds="true"
     android:scaleType="centerCrop"
-    app:layout_constraintStart_toEndOf="@id/left_bottom"
-    app:layout_constraintTop_toTopOf="@id/left_bottom"
+    app:layout_constraintStart_toEndOf="@id/bottom_left"
+    app:layout_constraintTop_toTopOf="@id/bottom_left"
     app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.BottomRight"
     tools:src="@tools:sample/avatars" />
+
+  <View
+    android:id="@+id/cell_start_guide"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:orientation="horizontal"
+    app:layout_constraintEnd_toEndOf="@id/top_right"
+    app:layout_constraintTop_toTopOf="@id/top_right" />
 
   <TextView
     android:id="@+id/name"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:layout_marginStart="8dp"
+    android:ellipsize="end"
     android:lines="1"
     android:textSize="16sp"
     android:textStyle="bold"
     app:layout_constrainedWidth="true"
     app:layout_constraintBottom_toTopOf="@id/message"
-    app:layout_constraintStart_toEndOf="@id/right_top"
+    app:layout_constraintEnd_toStartOf="@id/user_id"
+    app:layout_constraintHorizontal_bias="0"
+    app:layout_constraintHorizontal_chainStyle="packed"
+    app:layout_constraintStart_toEndOf="@id/cell_start_guide"
     app:layout_constraintTop_toTopOf="parent"
     app:layout_constraintVertical_chainStyle="packed"
     tools:text="TESTTESTTES" />
@@ -75,6 +88,7 @@
     android:lines="1"
     android:textSize="13sp"
     app:layout_constraintBottom_toBottomOf="@id/name"
+    app:layout_constraintEnd_toStartOf="@id/date"
     app:layout_constraintStart_toEndOf="@id/name"
     app:layout_constraintTop_toTopOf="@id/name"
     tools:text="your id" />
