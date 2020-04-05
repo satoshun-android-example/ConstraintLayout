@@ -6,5 +6,26 @@
 
   <fragment
     android:id="@+id/nav_main_frag"
-    android:name="com.github.satoshun.example.MainFragment" />
+    android:name="com.github.satoshun.example.MainFragment">
+
+    <action
+      android:id="@+id/nav_main_to_center_with_divider"
+      app:destination="@id/nav_center_with_divider" />
+
+    <action
+      android:id="@+id/nav_main_to_gone_width"
+      app:destination="@id/nav_gone_width" />
+  </fragment>
+
+  <activity
+    android:id="@+id/nav_center_with_divider"
+    android:name="com.github.satoshun.example.centerwithdivider.CenterWithDividerActivity" />
+
+  <activity
+    android:id="@+id/nav_gone_width"
+    android:name="com.github.satoshun.example.gonewidth.GoneWidthActivity" />
+
+  <activity
+    android:id="@+id/nav_trim"
+    android:name="com.github.satoshun.example.trimview.TrimExpandedViewActivity" />
 </navigation>

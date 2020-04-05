@@ -2,20 +2,16 @@ package com.github.satoshun.example.trimview
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.lifecycleScope
 import com.github.satoshun.example.R
 import com.github.satoshun.example.databinding.TrimViewActBinding
-import kotlinx.coroutines.delay
-import kotlinx.coroutines.launch
+import com.github.satoshun.example.getContentView
 
-class TrimExpandedViewActivity : AppCompatActivity() {
-
+class TrimExpandedViewActivity : AppCompatActivity(R.layout.trim_view_act) {
   private lateinit var binding: TrimViewActBinding
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    binding = DataBindingUtil.setContentView(this, R.layout.trim_view_act)
+    binding = TrimViewActBinding.bind(getContentView())
     setSupportActionBar(binding.toolbar)
   }
 }

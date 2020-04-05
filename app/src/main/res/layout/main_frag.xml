@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
   android:orientation="vertical">
 
+  <Button
+    android:id="@+id/center_with_divider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Center With Divider"
+    tools:ignore="HardcodedText" />
+
+  <Button
+    android:id="@+id/gone_width"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Gone Width"
+    tools:ignore="HardcodedText" />
+
+  <Button
+    android:id="@+id/trim"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Trim View"
+    tools:ignore="HardcodedText" />
 </LinearLayout>
