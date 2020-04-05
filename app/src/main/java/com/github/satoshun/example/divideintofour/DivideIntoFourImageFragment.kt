@@ -3,34 +3,42 @@ package com.github.satoshun.example.divideintofour
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
-import coil.api.load
+import androidx.recyclerview.widget.LinearLayoutManager
 import com.github.satoshun.example.R
-import com.github.satoshun.example.databinding.DivideIntoFourImageBinding
+import com.github.satoshun.example.databinding.DivideIntoFourImageFragBinding
 
-class DivideIntoFourImageFragment : Fragment(R.layout.divide_into_four_image) {
+class DivideIntoFourImageFragment : Fragment(R.layout.divide_into_four_image_frag) {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
-    val binding = DivideIntoFourImageBinding.bind(view)
+    val binding = DivideIntoFourImageFragBinding.bind(view)
 
-    val data = CellData(
-      image1 = "https://pbs.twimg.com/media/ESGIm9_UUAA4TmJ?format=jpg&name=360x360",
-      image2 = "https://pbs.twimg.com/media/ES_wWaEUcAAmUe1?format=jpg&name=large",
-      image3 = "https://pbs.twimg.com/media/ER7Jud3U8AALg5Q?format=jpg&name=large",
-      image4 = "https://pbs.twimg.com/media/ERmlHYEU8AANNQ4?format=jpg&name=large",
-      name = "satoshun",
-      id = "@stsn_jp",
-      date = "01/01",
-      message = "こんにちは"
+    val data = listOf(
+      CellData(
+        image1 = "https://pbs.twimg.com/media/ESGIm9_UUAA4TmJ?format=jpg&name=360x360",
+        image2 = "https://pbs.twimg.com/media/ES_wWaEUcAAmUe1?format=jpg&name=large",
+        image3 = "https://pbs.twimg.com/media/ER7Jud3U8AALg5Q?format=jpg&name=large",
+        image4 = "https://pbs.twimg.com/media/ERmlHYEU8AANNQ4?format=jpg&name=large",
+        name = "satoshun",
+        id = "@stsn_jp",
+        date = "01/01",
+        message = "こんにちは"
+      ),
+      CellData(
+        image1 = "https://pbs.twimg.com/media/ESGIm9_UUAA4TmJ?format=jpg&name=360x360",
+        image2 = "https://pbs.twimg.com/media/ES_wWaEUcAAmUe1?format=jpg&name=large",
+        image3 = "https://pbs.twimg.com/media/ER7Jud3U8AALg5Q?format=jpg&name=large",
+        image4 = "https://pbs.twimg.com/media/ERmlHYEU8AANNQ4?format=jpg&name=large",
+        name = "too too too too too too too long name",
+        id = "@stsn_jp",
+        date = "01/01",
+        message = "こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。"
+      )
     )
-    binding.leftTop.load(data.image1)
-    binding.rightTop.load(data.image2)
-    binding.leftBottom.load(data.image3)
-    binding.rightBottom.load(data.image4)
 
-    binding.name.text = data.name
-    binding.userId.text = data.id
-    binding.date.text = data.date
-    binding.message.text = data.message
+    binding.recycler.layoutManager = LinearLayoutManager(requireContext())
+    binding.recycler.adapter = DivideIntoFourImageAdapter().apply {
+      submitList(data)
+    }
   }
 }
 
