@@ -22,7 +22,10 @@ android {
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
   }
-
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
   viewBinding {
     enabled = true
   }
@@ -35,6 +38,8 @@ dependencies {
   implementation APPCOMPAT
   implementation CONSTRAINTLAYOUT
   implementation KTX
+
+  implementation MATERIAL
 
   implementation ACTIVITYX
   implementation FRAGMENTX
@@ -51,7 +56,7 @@ dependencies {
   implementation DAGGER_ANDROID_RUNTIME
   kapt DAGGER_ANDROID_COMPILER
 
-  implementation GLIDE
+  implementation COIL
 
   implementation GROUPIE
   implementation GROUPIE_DATABINDING

@@ -19,6 +19,10 @@
     <action
       android:id="@+id/nav_main_to_trim"
       app:destination="@id/nav_trim" />
+
+    <action
+      android:id="@+id/nav_main_to_divide_into_four_image"
+      app:destination="@id/nav_divide_into_four_image" />
   </fragment>
 
   <activity
@@ -32,4 +36,8 @@
   <activity
     android:id="@+id/nav_trim"
     android:name="com.github.satoshun.example.trimview.TrimExpandedViewActivity" />
+
+  <fragment
+    android:id="@+id/nav_divide_into_four_image"
+    android:name="com.github.satoshun.example.divideintofour.DivideIntoFourImageFragment" />
 </navigation>

@@ -12,6 +12,9 @@ class MainFragment : Fragment(R.layout.main_frag) {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
     super.onViewCreated(view, savedInstanceState)
 
+    binding.divideIntoFourImage.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navMainToDivideIntoFourImage())
+    }
     binding.centerWithDivider.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navMainToCenterWithDivider())
     }

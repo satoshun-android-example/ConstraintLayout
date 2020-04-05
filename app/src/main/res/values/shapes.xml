@@ -1,0 +1,22 @@
+<resources>
+
+  <style name="ShapeAppearanceOverlay.Example.TopLeft" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopLeft">100%</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.Example.TopRight" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeTopRight">100%</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.Example.BottomLeft" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeBottomLeft">100%</item>
+  </style>
+
+  <style name="ShapeAppearanceOverlay.Example.BottomRight" parent="">
+    <item name="cornerFamily">rounded</item>
+    <item name="cornerSizeBottomRight">100%</item>
+  </style>
+</resources>

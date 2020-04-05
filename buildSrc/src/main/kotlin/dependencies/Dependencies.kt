@@ -33,7 +33,7 @@ const val CONTENTPAGER = "androidx.contentpager:contentpager:1.0.0-rc01"
 const val WEBKIT = "androidx.webkit:webkit:1.0.0"
 const val MEDIA2 = "androidx.media2:media2:1.0.0-alpha04"
 
-const val MATERIAL = "com.google.android.material:material:1.1.0-rc02"
+const val MATERIAL = "com.google.android.material:material:1.2.0-alpha05"
 const val PAGING = "androidx.paging:paging-runtime:2.1.0"
 const val BROWSER = "androidx.browser:browser:1.0.0"
 
@@ -41,17 +41,10 @@ const val NAVIGATION = "androidx.navigation:navigation-common-ktx:$VNAVIGATION"
 const val NAVIGATION_FRAGMENT = "androidx.navigation:navigation-fragment-ktx:$VNAVIGATION"
 const val NAVIGATION_UI = "androidx.navigation:navigation-ui-ktx:$VNAVIGATION"
 
-private const val VROOM = "2.1.0-alpha04"
-const val ROOM_COMMON = "androidx.room:room-common:$VROOM"
-const val ROOM_RUNTIME = "androidx.room:room-runtime:$VROOM"
-const val ROOM_COMPILER = "androidx.room:room-compiler:$VROOM"
-
-const val VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0-alpha03"
-const val LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0-alpha03"
+const val VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0"
+const val LIVEDATA = "androidx.lifecycle:lifecycle-livedata-ktx:2.1.0"
 const val LIFECYCLE_COMPILER = "androidx.lifecycle:lifecycle-compiler:2.0.0"
-const val LIFECYCLE_EXTENSIONS = "androidx.lifecycle:lifecycle-extensions:2.1.0-alpha03"
-
-const val BIOMETRIC = "androidx.biometric:biometric:1.0.0-alpha03"
+const val LIFECYCLE_EXTENSIONS = "androidx.lifecycle:lifecycle-extensions:2.1.0"
 
 const val EMOJI = "androidx.emoji:emoji:1.0.0"
 const val EMOJI_COMPAT = "androidx.emoji:emoji-appcompat:1.0.0"
@@ -62,7 +55,7 @@ const val SWIPE_REFRESH_LAYOUT = "androidx.swiperefreshlayout:swiperefreshlayout
 const val SAVEDSTATE = "androidx.savedstate:savedstate:1.0.0-alpha02"
 const val SAVEDSTATE_VIEWMODEL = "androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-alpha01"
 
-const val VIEWPAGER2 = "androidx.viewpager2:viewpager2:1.0.0-alpha01"
+const val VIEWPAGER2 = "androidx.viewpager2:viewpager2:1.0.0"
 
 const val RECOMMENDATION = "androidx.recommendation:recommendation:1.0.0"
 
@@ -90,6 +83,7 @@ const val DAGGER_ANDROID_COMPILER = "com.google.dagger:dagger-android-processor:
 const val DAGGER_ANDROID_SUPPORT_RUNTIME = "com.google.dagger:dagger-android-support:$VDAGGER"
 
 const val GLIDE = "com.github.bumptech.glide:glide:4.9.0"
+const val COIL = "io.coil-kt:coil:0.9.5"
 
 const val JUNIT = "junit:junit:4.13-beta-1"
 const val TRUTH = "com.google.truth:truth:0.42"
