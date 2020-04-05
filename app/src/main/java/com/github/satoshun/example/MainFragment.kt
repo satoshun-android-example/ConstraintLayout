@@ -16,8 +16,10 @@ class MainFragment : Fragment(R.layout.main_frag) {
       findNavController().navigate(MainFragmentDirections.navMainToCenterWithDivider())
     }
     binding.goneWidth.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navMainToGoneWidth())
     }
     binding.trim.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navMainToTrim())
     }
   }
 }
