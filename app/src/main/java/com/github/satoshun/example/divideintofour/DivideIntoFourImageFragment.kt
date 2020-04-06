@@ -32,7 +32,38 @@ class DivideIntoFourImageFragment : Fragment(R.layout.divide_into_four_image_fra
         id = "@stsn_jp",
         date = "01/01",
         message = "こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。"
+      ),
+      CellData(
+        image1 = "https://pbs.twimg.com/media/ESGIm9_UUAA4TmJ?format=jpg&name=360x360",
+        image2 = "https://pbs.twimg.com/media/ES_wWaEUcAAmUe1?format=jpg&name=large",
+        image3 = null,
+        image4 = null,
+        name = "too too too too too too too long name",
+        id = "@stsn_jp",
+        date = "01/01",
+        message = "こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。"
+      ),
+      CellData(
+        image1 = "https://pbs.twimg.com/media/ESGIm9_UUAA4TmJ?format=jpg&name=360x360",
+        image2 = null,
+        image3 = null,
+        image4 = null,
+        name = "too too too too too too too long name",
+        id = "@stsn_jp",
+        date = "01/01",
+        message = "こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。"
+      ),
+      CellData(
+        image1 = null,
+        image2 = null,
+        image3 = null,
+        image4 = null,
+        name = "too too too too too too too long name",
+        id = "@stsn_jp",
+        date = "01/01",
+        message = "こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。こんにちは。こんばんは。"
       )
+
     )
 
     binding.recycler.layoutManager = LinearLayoutManager(requireContext())
@@ -43,10 +74,10 @@ class DivideIntoFourImageFragment : Fragment(R.layout.divide_into_four_image_fra
 }
 
 data class CellData(
-  val image1: String,
-  val image2: String,
-  val image3: String,
-  val image4: String,
+  val image1: String?,
+  val image2: String?,
+  val image3: String?,
+  val image4: String?,
   val name: String,
   val id: String,
   val date: String,

@@ -24,7 +24,7 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     app:barrierDirection="end"
-    app:constraint_referenced_ids="top_right" />
+    app:constraint_referenced_ids="top_right,right,single" />
 
   <com.google.android.material.imageview.ShapeableImageView
     android:id="@+id/top_left"
@@ -79,7 +79,32 @@
     android:visibility="gone"
     app:layout_constraintStart_toStartOf="@id/image_start_guideline"
     app:layout_constraintTop_toTopOf="@id/image_top_guideline"
-    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.TopLeft"
+    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.Left"
+    tools:src="@tools:sample/avatars" />
+
+  <com.google.android.material.imageview.ShapeableImageView
+    android:id="@+id/right"
+    android:layout_width="30dp"
+    android:layout_height="60dp"
+    android:adjustViewBounds="true"
+    android:scaleType="centerCrop"
+    android:visibility="gone"
+    app:layout_constraintStart_toEndOf="@id/left"
+    app:layout_constraintTop_toTopOf="@id/left"
+    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.Right"
+    tools:src="@tools:sample/avatars" />
+
+  <com.google.android.material.imageview.ShapeableImageView
+    android:id="@+id/single"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:adjustViewBounds="true"
+    android:background="#dddddd"
+    android:scaleType="centerCrop"
+    android:visibility="gone"
+    app:layout_constraintStart_toStartOf="@id/image_start_guideline"
+    app:layout_constraintTop_toTopOf="@id/image_top_guideline"
+    app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.PILL"
     tools:src="@tools:sample/avatars" />
 
   <TextView
