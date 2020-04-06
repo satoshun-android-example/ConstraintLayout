@@ -29,9 +29,9 @@
     android:id="@+id/nav_center_with_divider"
     android:name="com.github.satoshun.example.centerwithdivider.CenterWithDividerActivity" />
 
-  <activity
+  <fragment
     android:id="@+id/nav_gone_width"
-    android:name="com.github.satoshun.example.gonewidth.GoneWidthActivity" />
+    android:name="com.github.satoshun.example.gonewidth.GoneWidthFragment" />
 
   <activity
     android:id="@+id/nav_trim"

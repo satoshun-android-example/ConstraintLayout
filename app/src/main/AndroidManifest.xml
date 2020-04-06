@@ -27,10 +27,6 @@
       android:theme="@style/AppTheme.NoActionBar" />
 
     <activity
-      android:name=".gonewidth.GoneWidthActivity"
-      android:theme="@style/AppTheme.NoActionBar" />
-
-    <activity
       android:name=".trimview.TrimExpandedViewActivity"
       android:theme="@style/AppTheme.NoActionBar" />
   </application>
