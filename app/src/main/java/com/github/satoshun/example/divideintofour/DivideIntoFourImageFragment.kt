@@ -36,7 +36,7 @@ class DivideIntoFourImageFragment : Fragment(R.layout.divide_into_four_image_fra
     )
 
     binding.recycler.layoutManager = LinearLayoutManager(requireContext())
-    binding.recycler.adapter = DivideIntoFourImageAdapter().apply {
+    binding.recycler.adapter = DivideIntoFourImageAdapter2().apply {
       submitList(data)
     }
   }
