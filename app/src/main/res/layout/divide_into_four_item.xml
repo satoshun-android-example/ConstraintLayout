@@ -78,10 +78,9 @@
     android:layout_marginEnd="8dp"
     android:lines="1"
     android:textSize="13sp"
-    app:layout_constraintBottom_toBottomOf="@id/name"
+    app:layout_constraintBaseline_toBaselineOf="@id/name"
     app:layout_constraintEnd_toStartOf="@id/date"
     app:layout_constraintStart_toEndOf="@id/name"
-    app:layout_constraintTop_toTopOf="@id/name"
     tools:text="your id" />
 
   <TextView
@@ -90,9 +89,8 @@
     android:layout_height="wrap_content"
     android:layout_marginEnd="16dp"
     android:textSize="12sp"
-    app:layout_constraintBottom_toBottomOf="@id/user_id"
+    app:layout_constraintBaseline_toBaselineOf="@id/user_id"
     app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="@id/user_id"
     tools:text="@tools:sample/date/mmddyy" />
 
   <TextView
