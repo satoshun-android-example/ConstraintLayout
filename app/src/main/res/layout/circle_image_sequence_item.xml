@@ -4,6 +4,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="144dp"
   android:layout_height="144dp"
+  android:layout_marginBottom="12dp"
   app:cardBackgroundColor="#FFEEEEEE"
   app:cardCornerRadius="12dp">
 
@@ -49,6 +50,7 @@
       android:scaleType="centerCrop"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="@id/image1"
+      app:layout_goneMarginStart="32dp"
       app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.PILL"
       tools:src="@tools:sample/avatars" />
 
@@ -62,6 +64,7 @@
       android:scaleType="centerCrop"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="@id/image2"
+      app:layout_goneMarginStart="44dp"
       app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.PILL"
       tools:src="@tools:sample/avatars" />
 
@@ -75,6 +78,7 @@
       android:scaleType="centerCrop"
       app:layout_constraintBottom_toBottomOf="parent"
       app:layout_constraintStart_toStartOf="@id/image3"
+      app:layout_goneMarginStart="56dp"
       app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Example.PILL"
       tools:src="@tools:sample/avatars" />
   </androidx.constraintlayout.widget.ConstraintLayout>

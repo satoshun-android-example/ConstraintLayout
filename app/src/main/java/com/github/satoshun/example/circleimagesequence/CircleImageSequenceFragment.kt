@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -30,6 +31,27 @@ class CircleImageSequenceFragment : Fragment(R.layout.circle_image_sequence_frag
             image1 = "https://pbs.twimg.com/media/EThSmPiUYAEwNxB?format=png&name=medium",
             image2 = "https://pbs.twimg.com/media/ES_wWaEUcAAmUe1?format=jpg&name=large",
             image3 = "https://pbs.twimg.com/media/ESU2e78U0AApKk-?format=jpg&name=900x900",
+            image4 = "https://pbs.twimg.com/profile_images/1254338014605570054/TTmM7svb_400x400.jpg"
+          ),
+          CircleImageSequence(
+            name = "Hello World",
+            image1 = null,
+            image2 = "https://pbs.twimg.com/media/ES_wWaEUcAAmUe1?format=jpg&name=large",
+            image3 = "https://pbs.twimg.com/media/ESU2e78U0AApKk-?format=jpg&name=900x900",
+            image4 = "https://pbs.twimg.com/profile_images/1254338014605570054/TTmM7svb_400x400.jpg"
+          ),
+          CircleImageSequence(
+            name = "Hello World",
+            image1 = null,
+            image2 = null,
+            image3 = "https://pbs.twimg.com/media/ESU2e78U0AApKk-?format=jpg&name=900x900",
+            image4 = "https://pbs.twimg.com/profile_images/1254338014605570054/TTmM7svb_400x400.jpg"
+          ),
+          CircleImageSequence(
+            name = "Hello World",
+            image1 = null,
+            image2 = null,
+            image3 = null,
             image4 = "https://pbs.twimg.com/profile_images/1254338014605570054/TTmM7svb_400x400.jpg"
           )
         )
@@ -72,8 +94,14 @@ internal class CircleImageSequenceAdapter :
     with(holder.binding) {
       name.text = item.name
       image1.load(item.image1)
+      image1.isVisible = item.image1 != null
+
       image2.load(item.image2)
+      image2.isVisible = item.image2 != null
+
       image3.load(item.image3)
+      image3.isVisible = item.image3 != null
+
       image4.load(item.image4)
     }
   }
@@ -85,8 +113,8 @@ class CircleImageSequenceViewHolder(
 
 internal data class CircleImageSequence(
   val name: String,
-  val image1: String,
+  val image1: String?,
   val image2: String?,
   val image3: String?,
-  val image4: String?
+  val image4: String
 )
