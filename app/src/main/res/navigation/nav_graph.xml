@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
   xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
   android:id="@+id/nav_graph.xml"
   app:startDestination="@id/nav_main_frag">
 
@@ -23,6 +24,10 @@
     <action
       android:id="@+id/nav_main_to_divide_into_four_image"
       app:destination="@id/nav_divide_into_four_image" />
+
+    <action
+      android:id="@+id/nav_main_to_circle_image_sequence"
+      app:destination="@id/nav_circle_image_sequence" />
   </fragment>
 
   <activity
@@ -39,5 +44,11 @@
 
   <fragment
     android:id="@+id/nav_divide_into_four_image"
-    android:name="com.github.satoshun.example.divideintofour.DivideIntoFourImageFragment" />
+    android:name="com.github.satoshun.example.divideintofour.DivideIntoFourImageFragment"
+    tools:layout="@layout/divide_into_four_image_frag" />
+
+  <fragment
+    android:id="@+id/nav_circle_image_sequence"
+    android:name="com.github.satoshun.example.circleimagesequence.CircleImageSequenceFragment"
+    tools:layout="@layout/circle_image_sequence_frag" />
 </navigation>

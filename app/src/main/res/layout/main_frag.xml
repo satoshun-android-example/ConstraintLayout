@@ -8,6 +8,12 @@
   tools:ignore="HardcodedText">
 
   <Button
+    android:id="@+id/sequence"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Circle Image Sequence" />
+
+  <Button
     android:id="@+id/divide_into_four_image"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
