@@ -27,5 +27,8 @@ class MainFragment : Fragment(R.layout.main_frag) {
     binding.trim.setOnClickListener {
       findNavController().navigate(MainFragmentDirections.navMainToTrim())
     }
+    binding.maxLine.setOnClickListener {
+      findNavController().navigate(MainFragmentDirections.navMainToMaxLine())
+    }
   }
 }

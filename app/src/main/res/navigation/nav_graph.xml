@@ -28,6 +28,10 @@
     <action
       android:id="@+id/nav_main_to_circle_image_sequence"
       app:destination="@id/nav_circle_image_sequence" />
+
+    <action
+      android:id="@+id/nav_main_to_max_line"
+      app:destination="@id/nav_max_line" />
   </fragment>
 
   <activity
@@ -50,5 +54,10 @@
   <fragment
     android:id="@+id/nav_circle_image_sequence"
     android:name="com.github.satoshun.example.circleimagesequence.CircleImageSequenceFragment"
+    tools:layout="@layout/circle_image_sequence_frag" />
+
+  <fragment
+    android:id="@+id/nav_max_line"
+    android:name="com.github.satoshun.example.maxline.MaxLineFragment"
     tools:layout="@layout/circle_image_sequence_frag" />
 </navigation>

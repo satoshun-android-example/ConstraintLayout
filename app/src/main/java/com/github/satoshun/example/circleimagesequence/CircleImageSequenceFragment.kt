@@ -14,8 +14,6 @@ import coil.api.load
 import com.github.satoshun.example.R
 import com.github.satoshun.example.databinding.CircleImageSequenceFragBinding
 import com.github.satoshun.example.databinding.CircleImageSequenceItemBinding
-import com.github.satoshun.example.databinding.DivideIntoFourItemBinding
-import com.github.satoshun.example.divideintofour.CellData
 
 class CircleImageSequenceFragment : Fragment(R.layout.circle_image_sequence_frag) {
   override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

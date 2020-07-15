@@ -36,4 +36,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:text="Trim View" />
+
+  <Button
+    android:id="@+id/max_line"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="MaxLine" />
 </LinearLayout>
