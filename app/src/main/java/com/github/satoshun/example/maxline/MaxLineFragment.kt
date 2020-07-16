@@ -4,15 +4,10 @@ import android.annotation.SuppressLint
 import android.content.Context
 import android.os.Bundle
 import android.util.AttributeSet
-import android.util.SparseArray
 import android.view.View
 import androidx.constraintlayout.helper.widget.Flow
-import androidx.constraintlayout.solver.widgets.ConstraintWidget
-import androidx.constraintlayout.solver.widgets.ConstraintWidgetContainer
-import androidx.constraintlayout.solver.widgets.Helper
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.isGone
-import androidx.core.view.isInvisible
 import androidx.core.view.isVisible
 import androidx.fragment.app.Fragment
 import com.github.satoshun.example.R
